@@ -152,16 +152,6 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>NaicsCode</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>NaicsDesc</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>OISMAccountPlan__NumberofLocations__c</field>
             <table>Account</table>
         </columns>
@@ -228,16 +218,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>ShippingPostalCode</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Sic</field>
-            <table>Account</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>SicDesc</field>
             <table>Account</table>
         </columns>
         <columns>
