@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountHealth__c</field>
+    </columns>
+    <columns>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__APType__c</field>
+    </columns>
+    <description>accounts at risk are those with low account health</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>2017</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Account at risk</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>
