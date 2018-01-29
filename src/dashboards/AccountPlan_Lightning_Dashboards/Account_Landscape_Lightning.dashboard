@@ -13,15 +13,15 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Keep__c</column>
+                    <column>AccountPlan__c$Keep__c</column>
                 </chartSummary>
                 <componentType>BarGrouped</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
                 <header>YoY Keep spend by account</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/landscape_YoY_keep</report>
@@ -42,7 +42,7 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Summ__c</column>
+                    <column>AccountPlan__c.SpendAndShares__r$Summ__c</column>
                 </chartSummary>
                 <componentType>BarStacked100</componentType>
                 <displayUnits>Auto</displayUnits>
@@ -50,8 +50,8 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>true</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Measure__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+                <groupingColumn>AccountPlan__c.SpendAndShares__r$Measure__c</groupingColumn>
                 <header>Account Spend Landscape by Account</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/landscape_stuff</report>
@@ -73,15 +73,15 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
                 <header>Spend by account, multi year</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/spend_by_account1</report>
@@ -102,15 +102,15 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
                 <header>Keep revenue by account, multi year</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/revenue_by_account_multi_year</report>
@@ -131,15 +131,15 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
                 </chartSummary>
                 <componentType>BarStacked</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
                 <header>Proposition landscape by account</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/Proposition_landscape_by_account</report>
