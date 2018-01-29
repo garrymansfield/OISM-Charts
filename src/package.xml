@@ -50,10 +50,6 @@
         <members>Accounts_and_AccountPlan</members>
         <members>Activities_with_AP</members>
         <members>account_plan_and_landscape_and_propositions</members>
-        <members>account_with_plans</members>
-        <members>AccountPlan</members>
-        <members>Goals_with_Activities</members>
-        <members>Landscapes</members>
         <name>ReportType</name>
     </types>
     <version>41.0</version>
