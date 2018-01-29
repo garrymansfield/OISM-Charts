@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Account.Account_Plans__r$GrowthPotential__c</column>
+            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
         </chartSummaries>
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -26,16 +26,16 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.Account_Plans__r$Year__c</field>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Account_Plans__r$GrowthPotential__c</field>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</field>
     </columns>
     <description>Growth potential by account</description>
     <filter>
         <criteriaItems>
-            <column>Account.Account_Plans__r$Year__c</column>
+            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -52,10 +52,10 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Accounts_and_AccountPlan__c</reportType>
+    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
     <scope>team</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.Account_Plans__r$GrowthPotential__c</sortColumn>
+    <sortColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>

@@ -5,7 +5,7 @@
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
     <dashboardGridLayout>
         <dashboardGridComponents>
-            <colSpan>9</colSpan>
+            <colSpan>5</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -13,22 +13,22 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountIndex__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountIndex__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$ContactHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__ContactHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GoalProgress__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <drillEnabled>false</drillEnabled>
@@ -45,33 +45,33 @@
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>9</colSpan>
-            <columnIndex>0</columnIndex>
+            <colSpan>4</colSpan>
+            <columnIndex>5</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountIndex__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountIndex__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$ContactHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__ContactHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GoalProgress__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <drillEnabled>false</drillEnabled>
@@ -87,13 +87,422 @@
                 <sortBy>RowValueDescending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>5</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowIndex>0</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>Table</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <header>Top 10 accounts with growth potential</header>
+                <maxValuesDisplayed>10</maxValuesDisplayed>
+                <report>AccountPlan_example_reports/Account_High_potential</report>
+                <sortBy>RowValueDescending</sortBy>
+                <indicatorHighColor>#06c803</indicatorHighColor>
+                <indicatorMiddleColor>#ffa500</indicatorMiddleColor>
+                <indicatorLowColor>#ff0000</indicatorLowColor>
+            </dashboardComponent>
+            <rowIndex>4</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>Table</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <header>Top 10 accounts by wallet share</header>
+                <maxValuesDisplayed>10</maxValuesDisplayed>
+                <report>AccountPlan_example_reports/Account_keepers</report>
+                <sortBy>RowValueDescending</sortBy>
+                <indicatorHighColor>#06c803</indicatorHighColor>
+                <indicatorMiddleColor>#ffa500</indicatorMiddleColor>
+                <indicatorLowColor>#ff0000</indicatorLowColor>
+            </dashboardComponent>
+            <rowIndex>4</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+                <componentType>Table</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <header>Top 10 accounts at risk</header>
+                <maxValuesDisplayed>10</maxValuesDisplayed>
+                <report>AccountPlan_example_reports/Account_at_risk</report>
+                <sortBy>RowValueAscending</sortBy>
+                <indicatorHighColor>#06c803</indicatorHighColor>
+                <indicatorMiddleColor>#ffa500</indicatorMiddleColor>
+                <indicatorLowColor>#ff0000</indicatorLowColor>
+            </dashboardComponent>
+            <rowIndex>4</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Average</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Impact__c</groupingColumn>
+                <header>Potential by Impact</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Potential_by_type1</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowLabelDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>3</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Account$Name</groupingColumn>
+                <header>Growth potential - by account</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_Potential</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>3</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>5</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Average</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Account$Owner</groupingColumn>
+                <header>Growth potential - by rep</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Potential_by_Rep</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>3</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>2</colSpan>
+            <columnIndex>7</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Average</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+                </chartSummary>
+                <componentType>Column</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__APType__c</groupingColumn>
+                <header>Growth potential - by Account type</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Potential_by_type</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>8</rowIndex>
+            <rowSpan>3</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Average</aggregate>
+                    <axisBinding>x</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</column>
+                </chartSummary>
+                <chartSummary>
+                    <aggregate>Average</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+                </chartSummary>
+                <componentType>Scatter</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>Account$Name</groupingColumn>
+                <header>Growth &amp; Share</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/growth_share</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>11</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Keep__c</column>
+                </chartSummary>
+                <componentType>BarGrouped</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</groupingColumn>
+                <header>YoY spend Keep by account</header>
+                <legendPosition>Right</legendPosition>
+                <report>AccountPlan_example_reports/landscape_YoY_keep</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>11</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Summ__c</column>
+                </chartSummary>
+                <componentType>BarStacked100</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>true</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Measure__c</groupingColumn>
+                <header>Portfolio Revenue Landscape</header>
+                <legendPosition>Right</legendPosition>
+                <report>AccountPlan_example_reports/landscape_stuff</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>11</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>4</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</column>
+                </chartSummary>
+                <componentType>BarGrouped</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <footer>FY17</footer>
+                <groupingColumn>Account$Owner</groupingColumn>
+                <groupingColumn>Account$Name</groupingColumn>
+                <header>Average goal progress by account</header>
+                <legendPosition>Right</legendPosition>
+                <report>AccountPlan_example_reports/Account_goal_progress_by_Rep</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>15</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>5</colSpan>
+            <columnIndex>4</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <axisBinding>y</axisBinding>
+                    <column>RowCount</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <displayUnits>Auto</displayUnits>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r$Name</groupingColumn>
+                <header># Activities per goal per account</header>
+                <legendPosition>Right</legendPosition>
+                <report>AccountPlan_example_reports/Activities_By_AP_and_Goal1</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>15</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <header>Customer spend by proposition</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>19</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <header>Revenue by proposition</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>19</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</column>
+                </chartSummary>
+                <componentType>Bar</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <header>Growth potential by proposition</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowValueDescending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>19</rowIndex>
+            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
         <rowHeight>80</rowHeight>
     </dashboardGridLayout>
-    <dashboardType>SpecifiedUser</dashboardType>
+    <dashboardType>MyTeamUser</dashboardType>
     <isGridLayout>true</isGridLayout>
     <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>

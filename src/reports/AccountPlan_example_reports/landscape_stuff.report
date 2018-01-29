@@ -7,15 +7,15 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>AccountPlan__c.SpendAndShares__r$Summ__c</column>
+            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Summ__c</column>
         </chartSummaries>
         <chartType>HorizontalBarStackedTo100</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+        <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>AccountPlan__c.SpendAndShares__r$Measure__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Measure__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -28,16 +28,16 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>AccountPlan__c$Year__c</field>
+        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>AccountPlan__c.SpendAndShares__r$Summ__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Summ__c</field>
     </columns>
     <description>As a percentage of account spend how is this distributed?</description>
     <filter>
         <criteriaItems>
-            <column>AccountPlan__c$Year__c</column>
+            <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -46,12 +46,12 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>AccountPlan__c$Account__c</field>
+        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>AccountPlan__c.SpendAndShares__r$Measure__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Measure__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Account landscape by account</name>
@@ -59,11 +59,11 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>APSpendAndShare__c</reportType>
+    <reportType>OISMAccountPlan__APSpendAndShare__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
+        <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

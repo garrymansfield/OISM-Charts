@@ -7,27 +7,27 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
+            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
         </chartSummaries>
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$No__c</column>
+            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__No__c</column>
         </chartSummaries>
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</column>
+            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</column>
         </chartSummaries>
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</column>
+            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</column>
         </chartSummaries>
         <chartType>HorizontalBar</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+        <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
@@ -43,28 +43,28 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>AccountPlan__c$Account__c</field>
+        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$No__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__No__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</field>
     </columns>
     <description>Which accounts have landscaping data by proposition</description>
     <filter>
         <criteriaItems>
-            <column>AccountPlan__c$Year__c</column>
+            <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -73,7 +73,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>AccountPlan__c.AP_Propositions__r$Proposition__c</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Landscape by proposition</name>
@@ -85,7 +85,7 @@
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>
