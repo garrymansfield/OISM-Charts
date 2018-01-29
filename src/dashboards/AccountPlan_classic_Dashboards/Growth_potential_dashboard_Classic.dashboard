@@ -89,12 +89,12 @@
             <chartSummary>
                 <aggregate>Average</aggregate>
                 <axisBinding>x</axisBinding>
-                <column>Account.Account_Plans__r$WalletShare__c</column>
+                <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</column>
             </chartSummary>
             <chartSummary>
                 <aggregate>Average</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>Account.Account_Plans__r$GrowthPotential__c</column>
+                <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
             </chartSummary>
             <componentType>Scatter</componentType>
             <displayUnits>Auto</displayUnits>

@@ -2,15 +2,15 @@
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Account_Plans__r$WalletShare__c</field>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</field>
     </columns>
     <columns>
-        <field>Account.Account_Plans__r$APType__c</field>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__APType__c</field>
     </columns>
     <description>Accounts with highest wallet share</description>
     <filter>
         <criteriaItems>
-            <column>Account.Account_Plans__r$Year__c</column>
+            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -27,10 +27,10 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Accounts_and_AccountPlan__c</reportType>
+    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
-    <sortColumn>Account.Account_Plans__r$WalletShare__c</sortColumn>
+    <sortColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>

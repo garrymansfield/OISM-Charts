@@ -6,7 +6,7 @@
     <description>account info and account plan</description>
     <join>
         <outerJoin>true</outerJoin>
-        <relationship>Account_Plans__r</relationship>
+        <relationship>OISMAccountPlan__Account_Plans__r</relationship>
     </join>
     <label>Accounts and AccountPlan</label>
     <sections>
@@ -42,7 +42,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Active__c</field>
+            <field>OISMAccountPlan__Active__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -107,7 +107,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CustomerPriority__c</field>
+            <field>OISMAccountPlan__CustomerPriority__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -162,7 +162,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>NumberofLocations__c</field>
+            <field>OISMAccountPlan__NumberofLocations__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -242,17 +242,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SLA__c</field>
+            <field>OISMAccountPlan__SLA__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SLAExpirationDate__c</field>
+            <field>OISMAccountPlan__SLAExpirationDate__c</field>
             <table>Account</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>SLASerialNumber__c</field>
+            <field>OISMAccountPlan__SLASerialNumber__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -272,7 +272,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>UpsellOpportunity__c</field>
+            <field>OISMAccountPlan__UpsellOpportunity__c</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -290,181 +290,181 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Year__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>APType__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__APType__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountDevelopmentCategory__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__AccountDevelopmentCategory__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Impact__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Impact__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountAmbition__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__AccountAmbition__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountIndex__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__AccountIndex__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountHealth__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__AccountHealth__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>ContactHealth__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__ContactHealth__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountOverview__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__AccountOverview__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountVision__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__AccountVision__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>CompetitorOverview__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__CompetitorOverview__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedDate</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>GoalProgress__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__GoalProgress__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>KeyPerfomance__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__KeyPerfomance__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>LastAccountReview__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__LastAccountReview__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastActivityDate</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>LongTermAmbition__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__LongTermAmbition__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>ManagerApprovalDate__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__ManagerApprovalDate__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Owner</field>
-            <table>Account.Account_Plans__r</table>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Value_proposition__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Value_proposition__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>WhatWeNeed__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__WhatWeNeed__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>No__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__No__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <masterLabel>Account Plans</masterLabel>
     </sections>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>FinGoal__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__FinGoal__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>WalletShare__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__WalletShare__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>GrowthPotential__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__GrowthPotential__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Spend__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Spend__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Target_Landscape__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Target_Landscape__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>No_Landscape__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__No_Landscape__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Keep__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Keep__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Grow__c</field>
-            <table>Account.Account_Plans__r</table>
+            <field>OISMAccountPlan__Grow__c</field>
+            <table>Account.OISMAccountPlan__Account_Plans__r</table>
         </columns>
         <masterLabel>AccountPlan landscaping</masterLabel>
     </sections>
