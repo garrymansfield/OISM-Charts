@@ -13,29 +13,29 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__No__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$No__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
                 <header>Landscape by proposition</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
@@ -56,15 +56,15 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
                 </chartSummary>
                 <componentType>ColumnStacked</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
                 <header>Proposition landscape by account</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/Proposition_landscape_by_account</report>
@@ -85,25 +85,24 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
                 </chartSummary>
-                <componentType>ColumnStacked</componentType>
+                <componentType>Bar</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <header>Spend by account, multi year</header>
-                <legendPosition>Right</legendPosition>
-                <report>AccountPlan_example_reports/spend_by_account1</report>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+                <header>Landscape total spend by proposition</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
                 <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -114,25 +113,24 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</column>
                 </chartSummary>
-                <componentType>ColumnStacked</componentType>
+                <componentType>Bar</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <header>Current revenue by account, multi year</header>
-                <legendPosition>Right</legendPosition>
-                <report>AccountPlan_example_reports/revenue_by_account_multi_year</report>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+                <header>Growth by proposition</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
                 <showPercentage>false</showPercentage>
-                <showValues>false</showValues>
+                <showValues>true</showValues>
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
             <rowIndex>5</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
             <colSpan>3</colSpan>
@@ -143,16 +141,74 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</column>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</column>
                 </chartSummary>
-                <componentType>ColumnStacked</componentType>
+                <componentType>Bar</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
-                <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-                <header>growth by account, multi year</header>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+                <header>Landscape keep spend  by proposition</header>
+                <legendPosition>Bottom</legendPosition>
+                <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+                <showPercentage>false</showPercentage>
+                <showValues>true</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>5</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>0</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <footer>2016,2017</footer>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
+                <header>Portfolio spend, multi year</header>
+                <legendPosition>Right</legendPosition>
+                <report>AccountPlan_example_reports/revenue_by_account_multi_year</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>9</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>3</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
+                <header>Portfolio Growth, multi year</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/growth_by_account_multi_year</report>
                 <showPercentage>false</showPercentage>
@@ -160,8 +216,38 @@
                 <sortBy>RowLabelAscending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>5</rowIndex>
-            <rowSpan>5</rowSpan>
+            <rowIndex>9</rowIndex>
+            <rowSpan>4</rowSpan>
+        </dashboardGridComponents>
+        <dashboardGridComponents>
+            <colSpan>3</colSpan>
+            <columnIndex>6</columnIndex>
+            <dashboardComponent>
+                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+                <chartAxisRange>Auto</chartAxisRange>
+                <chartSummary>
+                    <aggregate>Sum</aggregate>
+                    <axisBinding>y</axisBinding>
+                    <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</column>
+                </chartSummary>
+                <componentType>BarStacked</componentType>
+                <drillEnabled>false</drillEnabled>
+                <drillToDetailEnabled>false</drillToDetailEnabled>
+                <enableHover>false</enableHover>
+                <expandOthers>false</expandOthers>
+                <footer>2016,2017</footer>
+                <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+                <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
+                <header>Portfolio keep spend, multi year</header>
+                <legendPosition>Right</legendPosition>
+                <report>AccountPlan_example_reports/spend_by_account1</report>
+                <showPercentage>false</showPercentage>
+                <showValues>false</showValues>
+                <sortBy>RowLabelAscending</sortBy>
+                <useReportChart>false</useReportChart>
+            </dashboardComponent>
+            <rowIndex>9</rowIndex>
+            <rowSpan>4</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
         <rowHeight>80</rowHeight>

@@ -6,7 +6,7 @@
         <masterLabel>Status</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Status</sourceColumnName>
+        <sourceColumnName>AccountPlan__c.Goals_custom__r.Activities__r$Status</sourceColumnName>
         <useOther>true</useOther>
         <values>
             <sourceValues>
@@ -50,10 +50,10 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+        <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
         <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r$Name</secondaryGroupingColumn>
+        <secondaryGroupingColumn>AccountPlan__c.Goals_custom__r$Name</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -67,21 +67,21 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Subject</field>
+        <field>AccountPlan__c.Goals_custom__r.Activities__r$Subject</field>
     </columns>
     <columns>
-        <field>OISMAccountPlan__AccountPlan__c$Name</field>
+        <field>AccountPlan__c$Name</field>
     </columns>
     <description>See key goals by account and the number of activities in each</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
+        <field>AccountPlan__c$Account__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r$Name</field>
+        <field>AccountPlan__c.Goals_custom__r$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
@@ -94,11 +94,11 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Activities_with_AP__c</reportType>
+    <reportType>Activities_with_AP__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
+        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

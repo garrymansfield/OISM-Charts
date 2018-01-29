@@ -7,15 +7,15 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Keep__c</column>
+            <column>AccountPlan__c$Keep__c</column>
         </chartSummaries>
         <chartType>HorizontalBarGrouped</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+        <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>AccountPlan__c$Year__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -29,26 +29,26 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Keep__c</field>
+        <field>AccountPlan__c$Keep__c</field>
     </columns>
     <description>overall customer spend with our company. totals by account, year on year</description>
     <filter>
         <criteriaItems>
-            <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</column>
+            <column>AccountPlan__c$Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>2017,2016</value>
+            <value>2017,2016,2018</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>
     <groupingsAcross>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</field>
+        <field>AccountPlan__c$Year__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsAcross>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
+        <field>AccountPlan__c$Account__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>YoY spend Keep by account</name>
@@ -56,11 +56,11 @@
         <name>co</name>
         <value>0</value>
     </params>
-    <reportType>OISMAccountPlan__APSpendAndShare__c</reportType>
+    <reportType>APSpendAndShare__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
+        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

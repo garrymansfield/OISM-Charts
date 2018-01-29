@@ -3,12 +3,12 @@
     <baseObject>Account</baseObject>
     <category>accounts</category>
     <deployed>true</deployed>
-    <description>account info and account plan</description>
+    <description>Information on Accounts that have AccountPlans</description>
     <join>
-        <outerJoin>true</outerJoin>
+        <outerJoin>false</outerJoin>
         <relationship>Account_Plans__r</relationship>
     </join>
-    <label>Accounts and AccountPlan</label>
+    <label>Accounts with AccountPlans</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
@@ -108,6 +108,16 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CustomerPriority__c</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DandbCompany</field>
+            <table>Account</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Jigsaw</field>
             <table>Account</table>
         </columns>
         <columns>
@@ -290,32 +300,7 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Year__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>APType__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountDevelopmentCategory__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Impact__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>AccountAmbition__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountIndex__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
@@ -325,7 +310,17 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>ContactHealth__c</field>
+            <field>AccountHealthCount__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AccountHealthSum__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AccountIndex__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
@@ -350,7 +345,27 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>APType__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>CompetitorOverview__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ContactHealth__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ContactHealthCount__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ContactHealthSum__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
@@ -365,7 +380,62 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>EndDate__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>FinGoal__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>GoalProgress__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GoalProgressCount__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GoalProgressSum__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Spend__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Target_Landscape__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>No_Landscape__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Keep__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Grow__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GrowthPotential__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Impact__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
@@ -410,25 +480,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
+            <field>StartDate__c</field>
+            <table>Account.Account_Plans__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
             <field>Value_proposition__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>WhatWeNeed__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>No__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <masterLabel>Account Plans</masterLabel>
-    </sections>
-    <sections>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>FinGoal__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
@@ -438,34 +495,29 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>GrowthPotential__c</field>
+            <field>Weight__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Spend__c</field>
+            <field>WhatWeNeed__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Target_Landscape__c</field>
+            <field>Year__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>No_Landscape__c</field>
+            <field>AccountDevelopmentCategory__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Keep__c</field>
+            <field>Account__c</field>
             <table>Account.Account_Plans__r</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Grow__c</field>
-            <table>Account.Account_Plans__r</table>
-        </columns>
-        <masterLabel>AccountPlan landscaping</masterLabel>
+        <masterLabel>Account Plans</masterLabel>
     </sections>
 </ReportType>

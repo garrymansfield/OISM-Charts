@@ -7,15 +7,15 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+            <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
         </chartSummaries>
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+        <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</secondaryGroupingColumn>
+        <secondaryGroupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -30,24 +30,24 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</field>
+        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__No__c</field>
+        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$No__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</field>
+        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</field>
+        <field>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</field>
     </columns>
     <description>see breakdown of propositions by account spend</description>
     <filter>
         <criteriaItems>
-            <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</column>
+            <column>AccountPlan__c$Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2016,2017</value>
@@ -56,17 +56,17 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
+        <field>AccountPlan__c$Account__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</field>
+        <field>AccountPlan__c.AP_Propositions__r$Proposition__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</field>
+        <field>AccountPlan__c$Year__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Spend by account, multi year</name>
@@ -78,7 +78,7 @@
     <scope>organization</scope>
     <showDetails>false</showDetails>
     <timeFrameFilter>
-        <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
-        <interval>INTERVAL_PREVCURFY</interval>
+        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

@@ -8,21 +8,28 @@
     <leftSection>
         <columnSize>Wide</columnSize>
         <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Bar</componentType>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>Account.Account_Plans__r$GoalProgress__c</column>
+            </chartSummary>
+            <componentType>BarGrouped</componentType>
             <displayUnits>Auto</displayUnits>
             <drillEnabled>false</drillEnabled>
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>false</enableHover>
             <expandOthers>false</expandOthers>
+            <groupingColumn>Account$Owner</groupingColumn>
+            <groupingColumn>Account$Name</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>AccountPlan_example_reports/Account_goal_progress_by_Rep</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Goal progress by account and rep</title>
-            <useReportChart>true</useReportChart>
+            <title>Rep goal progress by account</title>
+            <useReportChart>false</useReportChart>
         </components>
     </leftSection>
     <rightSection>

@@ -13,22 +13,22 @@
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
             </chartSummary>
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__No__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$No__c</column>
             </chartSummary>
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Keep__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</column>
             </chartSummary>
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Grow__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</column>
             </chartSummary>
             <componentType>Column</componentType>
             <displayUnits>Auto</displayUnits>
@@ -36,7 +36,7 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
             <showPercentage>false</showPercentage>
@@ -46,12 +46,29 @@
             <useReportChart>false</useReportChart>
         </components>
         <components>
+            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <legendPosition>Bottom</legendPosition>
+            <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Landscape total spend by proposition</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
             <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
             <chartAxisRange>Auto</chartAxisRange>
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -60,14 +77,14 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>2016 and 2017</footer>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>AccountPlan_example_reports/spend_by_account1</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Multi year Spend by proposition</title>
+            <title>Portfolio spend, multi year</title>
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
@@ -96,7 +113,30 @@
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Grow__c</column>
+            </chartSummary>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Growth by proposition</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -104,15 +144,15 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>2016 ans 2017</footer>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+            <footer>2016 and 2017</footer>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
-            <report>AccountPlan_example_reports/revenue_by_account_multi_year</report>
+            <report>AccountPlan_example_reports/growth_by_account_multi_year</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Multi year revenue by proposition</title>
+            <title>Multi year growth by proposition</title>
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
@@ -124,7 +164,30 @@
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Keep__c</column>
+            </chartSummary>
+            <componentType>Bar</componentType>
+            <displayUnits>Auto</displayUnits>
+            <drillEnabled>false</drillEnabled>
+            <drillToDetailEnabled>false</drillToDetailEnabled>
+            <enableHover>false</enableHover>
+            <expandOthers>false</expandOthers>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+            <legendPosition>Bottom</legendPosition>
+            <report>AccountPlan_example_reports/Account_spend_by_proposition</report>
+            <showPercentage>false</showPercentage>
+            <showValues>true</showValues>
+            <sortBy>RowLabelAscending</sortBy>
+            <title>Landscape keep spend by proposition</title>
+            <useReportChart>false</useReportChart>
+        </components>
+        <components>
+            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
+            <chartAxisRange>Auto</chartAxisRange>
+            <chartSummary>
+                <aggregate>Sum</aggregate>
+                <axisBinding>y</axisBinding>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -132,15 +195,15 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <footer>2016 and 2017</footer>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+            <footer>2016 ans 2017</footer>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
-            <report>AccountPlan_example_reports/growth_by_account_multi_year</report>
+            <report>AccountPlan_example_reports/revenue_by_account_multi_year</report>
             <showPercentage>false</showPercentage>
             <showValues>false</showValues>
             <sortBy>RowLabelAscending</sortBy>
-            <title>Multi year growth by proposition</title>
+            <title>Multi year revenue by proposition</title>
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>

@@ -5,7 +5,7 @@
         <developerName>BucketField_4333982</developerName>
         <masterLabel>Growth</masterLabel>
         <nullTreatment>z</nullTreatment>
-        <sourceColumnName>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</sourceColumnName>
+        <sourceColumnName>Account.Account_Plans__r$GrowthPotential__c</sourceColumnName>
         <useOther>false</useOther>
         <values>
             <sourceValues>
@@ -34,12 +34,12 @@
         <chartSummaries>
             <aggregate>Average</aggregate>
             <axisBinding>x</axisBinding>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</column>
+            <column>Account.Account_Plans__r$WalletShare__c</column>
         </chartSummaries>
         <chartSummaries>
             <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+            <column>Account.Account_Plans__r$GrowthPotential__c</column>
         </chartSummaries>
         <chartType>Scatter</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -60,15 +60,15 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</field>
+        <field>Account.Account_Plans__r$Year__c</field>
     </columns>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</field>
+        <field>Account.Account_Plans__r$GrowthPotential__c</field>
     </columns>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</field>
+        <field>Account.Account_Plans__r$WalletShare__c</field>
     </columns>
     <columns>
         <field>BucketField_4333982</field>
@@ -76,7 +76,7 @@
     <description>Visualise customers by growth potential and wallet share</description>
     <filter>
         <criteriaItems>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
+            <column>Account.Account_Plans__r$Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -93,10 +93,10 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
+    <reportType>Accounts_and_AccountPlan__c</reportType>
     <scope>team</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</sortColumn>
+    <sortColumn>Account.Account_Plans__r$GrowthPotential__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>

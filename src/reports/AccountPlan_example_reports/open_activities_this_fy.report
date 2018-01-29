@@ -6,7 +6,7 @@
         <masterLabel>Status</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Status</sourceColumnName>
+        <sourceColumnName>AccountPlan__c.Goals_custom__r.Activities__r$Status</sourceColumnName>
         <useOther>true</useOther>
         <values>
             <sourceValues>
@@ -50,10 +50,10 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Owner</groupingColumn>
+        <groupingColumn>AccountPlan__c.Goals_custom__r.Activities__r$Owner</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$ActivityDate</secondaryGroupingColumn>
+        <secondaryGroupingColumn>AccountPlan__c.Goals_custom__r.Activities__r$ActivityDate</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -67,7 +67,7 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Subject</field>
+        <field>AccountPlan__c.Goals_custom__r.Activities__r$Subject</field>
     </columns>
     <columns>
         <field>BucketField_29066686</field>
@@ -75,7 +75,7 @@
     <description>A list of open activities by FQ this year for an Account</description>
     <filter>
         <criteriaItems>
-            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$IsClosed</column>
+            <column>AccountPlan__c.Goals_custom__r.Activities__r$IsClosed</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>0</value>
@@ -84,17 +84,17 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Owner</field>
+        <field>AccountPlan__c.Goals_custom__r.Activities__r$Owner</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>FiscalQuarter</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$ActivityDate</field>
+        <field>AccountPlan__c.Goals_custom__r.Activities__r$ActivityDate</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
+        <field>AccountPlan__c$Account__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>AccountPlan_open_activities this FY</name>
@@ -102,13 +102,13 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Activities_with_AP__c</reportType>
+    <reportType>Activities_with_AP__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <sortColumn>BucketField_29066686</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$ActivityDate</dateColumn>
+        <dateColumn>AccountPlan__c.Goals_custom__r.Activities__r$ActivityDate</dateColumn>
         <interval>INTERVAL_CURFY</interval>
     </timeFrameFilter>
 </Report>

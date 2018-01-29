@@ -6,7 +6,7 @@
         <masterLabel>Status</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
-        <sourceColumnName>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Status</sourceColumnName>
+        <sourceColumnName>AccountPlan__c.Goals_custom__r.Activities__r$Status</sourceColumnName>
         <useOther>true</useOther>
         <values>
             <sourceValues>
@@ -50,10 +50,10 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
+        <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
         <legendPosition>Bottom</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$IsClosed</secondaryGroupingColumn>
+        <secondaryGroupingColumn>AccountPlan__c.Goals_custom__r.Activities__r$IsClosed</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -67,18 +67,18 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Subject</field>
+        <field>AccountPlan__c.Goals_custom__r.Activities__r$Subject</field>
     </columns>
     <description>open and closed activities by account</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</field>
+        <field>AccountPlan__c$Account__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$IsClosed</field>
+        <field>AccountPlan__c.Goals_custom__r.Activities__r$IsClosed</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Open and closed activity per account</name>
@@ -86,11 +86,11 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Activities_with_AP__c</reportType>
+    <reportType>Activities_with_AP__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
     <timeFrameFilter>
-        <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
+        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>
