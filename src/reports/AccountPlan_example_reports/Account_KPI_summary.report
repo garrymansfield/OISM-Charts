@@ -79,10 +79,10 @@
     <name>Account KPI summary</name>
     <params>
         <name>co</name>
-        <value>0</value>
+        <value>1</value>
     </params>
     <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
-    <scope>team</scope>
+    <scope>organization</scope>
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>

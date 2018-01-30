@@ -37,7 +37,7 @@
             <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
-            <value>2017,2016</value>
+            <value>2017,2016,2018</value>
         </criteriaItems>
     </filter>
     <format>Matrix</format>

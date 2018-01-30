@@ -3,16 +3,16 @@
     <baseObject>OISMAccountPlan__AccountPlan__c</baseObject>
     <category>accounts</category>
     <deployed>true</deployed>
-    <description>AP landscape Props</description>
+    <description>For accounts with AccountPlan see details on the spend landscape by proposition.</description>
     <join>
         <join>
-            <outerJoin>true</outerJoin>
+            <outerJoin>false</outerJoin>
             <relationship>OISMAccountPlan__Landscapes__r</relationship>
         </join>
-        <outerJoin>true</outerJoin>
+        <outerJoin>false</outerJoin>
         <relationship>OISMAccountPlan__AP_Propositions__r</relationship>
     </join>
-    <label>account plan and landscape and propositions</label>
+    <label>AccountPlan - landscape and proposition details</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>

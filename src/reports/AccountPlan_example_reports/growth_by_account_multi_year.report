@@ -79,6 +79,6 @@
     <showDetails>false</showDetails>
     <timeFrameFilter>
         <dateColumn>OISMAccountPlan__AccountPlan__c$CreatedDate</dateColumn>
-        <interval>INTERVAL_PREVCURFY</interval>
+        <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

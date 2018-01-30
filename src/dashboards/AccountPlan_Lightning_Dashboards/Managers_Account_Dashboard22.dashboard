@@ -24,7 +24,7 @@
                 <footer>FY17</footer>
                 <groupingColumn>Account$Owner</groupingColumn>
                 <groupingColumn>Account$Name</groupingColumn>
-                <header>Average goal progress by account</header>
+                <header>Rep goal progress by account</header>
                 <legendPosition>Right</legendPosition>
                 <report>AccountPlan_example_reports/Account_goal_progress_by_Rep</report>
                 <showPercentage>false</showPercentage>
