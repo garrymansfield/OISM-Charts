@@ -2,7 +2,7 @@
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <buckets>
         <bucketType>picklist</bucketType>
-        <developerName>BucketField_29066686</developerName>
+        <developerName>BucketField_29066687</developerName>
         <masterLabel>Status</masterLabel>
         <nullTreatment>n</nullTreatment>
         <otherBucketLabel>Other</otherBucketLabel>
@@ -86,7 +86,7 @@
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>BucketField_29066686</field>
+        <field>BucketField_29066687</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Activities by Goals per account</name>
