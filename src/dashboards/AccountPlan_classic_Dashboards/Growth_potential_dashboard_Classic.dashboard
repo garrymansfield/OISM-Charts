@@ -79,6 +79,9 @@
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+    </rightSection>
     <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Growth potential dashboard (Classic)</title>

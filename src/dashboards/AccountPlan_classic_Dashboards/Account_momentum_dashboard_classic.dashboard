@@ -32,6 +32,9 @@
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
+    <rightSection>
+        <columnSize>Wide</columnSize>
+    </rightSection>
     <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Account momentum dashboard (classic)</title>
