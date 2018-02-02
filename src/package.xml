@@ -46,9 +46,6 @@
         <name>Report</name>
     </types>
     <types>
-        <members>APSpendAndShare</members>
-        <members>Accounts_and_AccountPlan</members>
-        <members>Activities_with_AP</members>
         <members>account_plan_and_landscape_and_propositions</members>
         <name>ReportType</name>
     </types>
