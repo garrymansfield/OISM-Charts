@@ -32,26 +32,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </leftSection>
-    <rightSection>
-        <columnSize>Wide</columnSize>
-        <components>
-            <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-            <chartAxisRange>Auto</chartAxisRange>
-            <componentType>Bar</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>false</enableHover>
-            <expandOthers>false</expandOthers>
-            <legendPosition>Bottom</legendPosition>
-            <report>AccountPlan_example_reports/Activities_By_AP_and_Goal1</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>#activities by goal per account</title>
-            <useReportChart>true</useReportChart>
-        </components>
-    </rightSection>
     <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Account momentum dashboard (classic)</title>

@@ -79,39 +79,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </middleSection>
-    <rightSection>
-        <columnSize>Wide</columnSize>
-        <components>
-            <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-            <chartAxisRange>Manual</chartAxisRange>
-            <chartAxisRangeMax>100.0</chartAxisRangeMax>
-            <chartAxisRangeMin>0.0</chartAxisRangeMin>
-            <chartSummary>
-                <aggregate>Average</aggregate>
-                <axisBinding>x</axisBinding>
-                <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</column>
-            </chartSummary>
-            <chartSummary>
-                <aggregate>Average</aggregate>
-                <axisBinding>y</axisBinding>
-                <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
-            </chartSummary>
-            <componentType>Scatter</componentType>
-            <displayUnits>Auto</displayUnits>
-            <drillEnabled>false</drillEnabled>
-            <drillToDetailEnabled>false</drillToDetailEnabled>
-            <enableHover>true</enableHover>
-            <expandOthers>false</expandOthers>
-            <groupingColumn>Account$Name</groupingColumn>
-            <legendPosition>Bottom</legendPosition>
-            <report>AccountPlan_example_reports/growth_share</report>
-            <showPercentage>false</showPercentage>
-            <showValues>false</showValues>
-            <sortBy>RowLabelAscending</sortBy>
-            <title>Account Growth and share</title>
-            <useReportChart>false</useReportChart>
-        </components>
-    </rightSection>
     <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Growth potential dashboard (Classic)</title>

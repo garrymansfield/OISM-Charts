@@ -27,8 +27,6 @@
         <members>AccountPlan_example_reports/Account_goal_progress_by_Rep</members>
         <members>AccountPlan_example_reports/Account_keepers</members>
         <members>AccountPlan_example_reports/Account_spend_by_proposition</members>
-        <members>AccountPlan_example_reports/Activities_By_AP_and_Goal1</members>
-        <members>AccountPlan_example_reports/Activities_By_Account</members>
         <members>AccountPlan_example_reports/Landscape_Renewal_dates_by_month</members>
         <members>AccountPlan_example_reports/Per_account_landscape_KPI</members>
         <members>AccountPlan_example_reports/Potential_by_Rep</members>
@@ -36,19 +34,14 @@
         <members>AccountPlan_example_reports/Potential_by_type1</members>
         <members>AccountPlan_example_reports/Proposition_landscape_by_account</members>
         <members>AccountPlan_example_reports/growth_by_account_multi_year</members>
-        <members>AccountPlan_example_reports/growth_share</members>
         <members>AccountPlan_example_reports/landscape_YoY_keep</members>
         <members>AccountPlan_example_reports/landscape_stuff</members>
         <members>AccountPlan_example_reports/manager_account_KPI_report</members>
-        <members>AccountPlan_example_reports/open_activities_this_fy</members>
         <members>AccountPlan_example_reports/revenue_by_account_multi_year</members>
         <members>AccountPlan_example_reports/spend_by_account1</members>
         <name>Report</name>
     </types>
     <types>
-        <members>APSpendAndShare</members>
-        <members>Accounts_and_AccountPlan</members>
-        <members>Activities_with_AP</members>
         <members>account_plan_and_landscape_and_propositions</members>
         <name>ReportType</name>
     </types>
