@@ -43,7 +43,7 @@
         <members>AccountPlan_example_reports/open_activities_this_fy</members>
         <members>AccountPlan_example_reports/revenue_by_account_multi_year</members>
         <members>AccountPlan_example_reports/spend_by_account1</members>
-        <name>Report</name>
+        <name>Report</name>1
     </types>
     <types>
         <members>account_plan_and_landscape_and_propositions</members>
