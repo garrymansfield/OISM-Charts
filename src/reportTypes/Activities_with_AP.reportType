@@ -1,27 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ReportType xmlns="http://soap.sforce.com/2006/04/metadata">
     <baseObject>AccountPlan__c</baseObject>
-    <category>accounts</category>
+    <category>other</category>
     <deployed>true</deployed>
-    <description>For accounts with AccountPlan see details on the spend landscape by proposition.</description>
+    <description>Activities with AccountPlan</description>
     <join>
         <join>
             <outerJoin>false</outerJoin>
-            <relationship>Landscapes__r</relationship>
+            <relationship>Activities__r</relationship>
         </join>
         <outerJoin>false</outerJoin>
-        <relationship>AP_Propositions__r</relationship>
+        <relationship>Goals_custom__r</relationship>
     </join>
-    <label>AccountPlan - landscape and proposition details</label>
+    <label>Activities with AP</label>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Account__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountAmbition__c</field>
+            <field>Impact__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -31,22 +26,22 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountHealth__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountHealthCount__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountHealthSum__c</field>
+            <field>Account__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>AccountIndex__c</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AccountHealth__c</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>WalletShare__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -86,17 +81,12 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>ContactHealthCount__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ContactHealthSum__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>AccountAmbition__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -121,32 +111,7 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>GoalProgressCount__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>GoalProgressSum__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Grow__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>GrowthPotential__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Impact__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Keep__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -157,11 +122,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastAccountReview__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastActivityDate</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -186,12 +146,32 @@
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Owner</field>
+            <field>Spend__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Spend__c</field>
+            <field>Target_Landscape__c</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>No_Landscape__c</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Keep__c</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Grow__c</field>
+            <table>AccountPlan__c</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -202,11 +182,6 @@
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Value_proposition__c</field>
-            <table>AccountPlan__c</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>WalletShare__c</field>
             <table>AccountPlan__c</table>
         </columns>
         <columns>
@@ -229,162 +204,252 @@
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Id</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
             <field>CreatedBy</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
+            <table>AccountPlan__c.Goals_custom__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>CreatedDate</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedBy</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>LastModifiedDate</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
+            <table>AccountPlan__c.Goals_custom__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
             <field>Name</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
+            <table>AccountPlan__c.Goals_custom__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Owner</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
+            <field>GoalDetails__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Proposition__c</field>
-            <table>AccountPlan__c.AP_Propositions__r</table>
+            <field>TeamMember__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
         </columns>
-        <masterLabel>AP Propositions</masterLabel>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IncrementalValue__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>KeyContact__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedBy</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>LastModifiedDate</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Notes__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Progress__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>APProposition__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Id</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>SWOTArea__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CompletionDate__c</field>
+            <table>AccountPlan__c.Goals_custom__r</table>
+        </columns>
+        <masterLabel>Goals custom</masterLabel>
     </sections>
     <sections>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>AccountHealth__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountIndex__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>AccountPlan__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>ContactHealth__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedBy</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>CreatedDate</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>GoalProgress__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>GrowthPotential__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Spend__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Target__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>No__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Keep__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Grow__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <field>Account</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>Id</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsAllDayEvent</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Owner</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CallDurationInSeconds</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CallObject</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CallDisposition</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CallType</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsClosed</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Description</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedBy</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>CreatedDate</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ActivityDate</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ActivityTimeOnly</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>DurationInMinutes</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>EventSubtype</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>GroupEventType</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsChild</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsGroupEvent</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedBy</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
             <field>LastModifiedDate</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Location</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Who</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Priority</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>IsPrivate</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>What</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>RecurrenceRegeneratedType</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>ShowAs</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
+        </columns>
+        <columns>
+            <checkedByDefault>false</checkedByDefault>
+            <field>Status</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>true</checkedByDefault>
-            <field>Name</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <field>Subject</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Opportunity__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <field>IsTask</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>RecordType</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <field>TaskSubtype</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>RenewDate__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <field>ActivityDateTime</field>
+            <table>AccountPlan__c.Goals_custom__r.Activities__r</table>
         </columns>
         <columns>
             <checkedByDefault>false</checkedByDefault>
-            <field>Threat__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
+            <field>LastActivityDate</field>
+            <table>AccountPlan__c</table>
         </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>Unassigned__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <columns>
-            <checkedByDefault>false</checkedByDefault>
-            <field>WalletShare__c</field>
-            <table>AccountPlan__c.AP_Propositions__r.Landscapes__r</table>
-        </columns>
-        <masterLabel>Landscapes</masterLabel>
+        <masterLabel>Activities</masterLabel>
     </sections>
 </ReportType>

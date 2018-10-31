@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>AccountPlan__c$Year__c</field>
+    </columns>
+    <columns>
+        <field>AccountPlan__c$AccountIndex__c</field>
+    </columns>
+    <columns>
+        <field>AccountPlan__c$WalletShare__c</field>
+    </columns>
+    <columns>
+        <field>AccountPlan__c$GrowthPotential__c</field>
+    </columns>
+    <columns>
+        <field>AccountPlan__c$ContactHealth__c</field>
+    </columns>
+    <columns>
+        <field>AccountPlan__c$GoalProgress__c</field>
+    </columns>
+    <columns>
+        <field>AccountPlan__c$CompetitorOverview__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>AccountPlan__c$Year__c</column>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>2017</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Account Plan Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>APSpendAndShare__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

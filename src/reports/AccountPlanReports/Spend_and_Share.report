@@ -7,16 +7,17 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Account.Account_Plans__r$GrowthPotential__c</column>
+            <column>AccountPlan__c.SpendAndShares__r$Summ__c</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
-        <enableHoverLabels>false</enableHoverLabels>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>true</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account$Name</groupingColumn>
-        <location>CHART_BOTTOM</location>
+        <groupingColumn>AccountPlan__c.SpendAndShares__r$Measure__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
         <showAxisLabels>true</showAxisLabels>
-        <showPercentage>false</showPercentage>
-        <showTotal>false</showTotal>
+        <showPercentage>true</showPercentage>
+        <showTotal>true</showTotal>
         <showValues>true</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
@@ -26,41 +27,38 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.Account_Plans__r$Year__c</field>
+        <field>AccountPlan__c$Name</field>
     </columns>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Account_Plans__r$GrowthPotential__c</field>
+        <field>AccountPlan__c.SpendAndShares__r$Summ__c</field>
     </columns>
-    <description>Growth potential by account</description>
     <filter>
         <criteriaItems>
-            <column>Account.Account_Plans__r$Year__c</column>
+            <column>AccountPlan__c$Id</column>
             <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>2017</value>
+            <operator>notEqual</operator>
+            <value></value>
         </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account$Name</field>
+        <field>AccountPlan__c.SpendAndShares__r$Measure__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Account Potential</name>
+    <name>Revenue Landscape This Year</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Accounts_and_AccountPlan__c</reportType>
-    <scope>team</scope>
+    <reportType>APSpendAndShare__c</reportType>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.Account_Plans__r$GrowthPotential__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Account$CreatedDate</dateColumn>
+        <dateColumn>AccountPlan__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

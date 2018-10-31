@@ -5,19 +5,20 @@
         <backgroundColor2>#FFFFFF</backgroundColor2>
         <backgroundFadeDir>Diagonal</backgroundFadeDir>
         <chartSummaries>
-            <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Account.Account_Plans__r$GrowthPotential__c</column>
+            <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBar</chartType>
+        <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account$Name</groupingColumn>
-        <location>CHART_BOTTOM</location>
+        <groupingColumn>Goal__c$Name</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_TOP</location>
+        <secondaryGroupingColumn>Goal__c.Activities__r$Status</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
-        <showValues>true</showValues>
+        <showValues>false</showValues>
         <size>Medium</size>
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
@@ -26,41 +27,40 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.Account_Plans__r$Year__c</field>
+        <field>Goal__c.Activities__r$CallDurationInSeconds</field>
     </columns>
     <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Account_Plans__r$GrowthPotential__c</field>
+        <field>Goal__c$Account_Plan__c</field>
     </columns>
-    <description>Growth potential by account</description>
-    <filter>
-        <criteriaItems>
-            <column>Account.Account_Plans__r$Year__c</column>
-            <isUnlocked>true</isUnlocked>
-            <operator>equals</operator>
-            <value>2017</value>
-        </criteriaItems>
-    </filter>
+    <columns>
+        <field>Goal__c.Activities__r$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Goal__c.Activities__r$Id</field>
+    </columns>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account$Name</field>
+        <field>Goal__c$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Account Potential</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Goal__c.Activities__r$Status</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Activities by Goal</name>
     <params>
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Accounts_and_AccountPlan__c</reportType>
-    <scope>team</scope>
+    <reportType>Goals_with_Activities__c</reportType>
+    <scope>organization</scope>
     <showDetails>true</showDetails>
     <showGrandTotal>true</showGrandTotal>
     <showSubTotals>true</showSubTotals>
-    <sortColumn>Account.Account_Plans__r$GrowthPotential__c</sortColumn>
-    <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
-        <dateColumn>Account$CreatedDate</dateColumn>
+        <dateColumn>Goal__c$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>
     </timeFrameFilter>
 </Report>

@@ -16,9 +16,6 @@
                 <maxValuesDisplayed>10</maxValuesDisplayed>
                 <report>AccountPlan_example_reports/Account_High_potential</report>
                 <sortBy>RowValueDescending</sortBy>
-                <indicatorHighColor>#06c803</indicatorHighColor>
-                <indicatorMiddleColor>#ffa500</indicatorMiddleColor>
-                <indicatorLowColor>#ff0000</indicatorLowColor>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>
@@ -35,9 +32,6 @@
                 <maxValuesDisplayed>10</maxValuesDisplayed>
                 <report>AccountPlan_example_reports/Account_keepers</report>
                 <sortBy>RowValueDescending</sortBy>
-                <indicatorHighColor>#06c803</indicatorHighColor>
-                <indicatorMiddleColor>#ffa500</indicatorMiddleColor>
-                <indicatorLowColor>#ff0000</indicatorLowColor>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>
@@ -54,9 +48,6 @@
                 <maxValuesDisplayed>10</maxValuesDisplayed>
                 <report>AccountPlan_example_reports/Account_at_risk</report>
                 <sortBy>RowValueAscending</sortBy>
-                <indicatorHighColor>#06c803</indicatorHighColor>
-                <indicatorMiddleColor>#ffa500</indicatorMiddleColor>
-                <indicatorLowColor>#ff0000</indicatorLowColor>
             </dashboardComponent>
             <rowIndex>0</rowIndex>
             <rowSpan>4</rowSpan>

@@ -30,7 +30,7 @@
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -39,8 +39,8 @@
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
             <footer>2016 and 2017</footer>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Year__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>AccountPlan_example_reports/spend_by_account1</report>
             <showPercentage>false</showPercentage>
@@ -58,7 +58,7 @@
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Summ__c</column>
+                <column>AccountPlan__c.SpendAndShares__r$Summ__c</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -66,8 +66,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__SpendAndShares__r$OISMAccountPlan__Measure__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+            <groupingColumn>AccountPlan__c.SpendAndShares__r$Measure__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>AccountPlan_example_reports/landscape_stuff</report>
             <showPercentage>false</showPercentage>
@@ -82,7 +82,7 @@
             <chartSummary>
                 <aggregate>Sum</aggregate>
                 <axisBinding>y</axisBinding>
-                <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r.OISMAccountPlan__Landscapes__r$OISMAccountPlan__Spend__c</column>
+                <column>AccountPlan__c.AP_Propositions__r.Landscapes__r$Spend__c</column>
             </chartSummary>
             <componentType>BarStacked</componentType>
             <displayUnits>Auto</displayUnits>
@@ -90,8 +90,8 @@
             <drillToDetailEnabled>false</drillToDetailEnabled>
             <enableHover>true</enableHover>
             <expandOthers>false</expandOthers>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Account__c</groupingColumn>
-            <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__AP_Propositions__r$OISMAccountPlan__Proposition__c</groupingColumn>
+            <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
+            <groupingColumn>AccountPlan__c.AP_Propositions__r$Proposition__c</groupingColumn>
             <legendPosition>Bottom</legendPosition>
             <report>AccountPlan_example_reports/revenue_by_account_multi_year</report>
             <showPercentage>false</showPercentage>

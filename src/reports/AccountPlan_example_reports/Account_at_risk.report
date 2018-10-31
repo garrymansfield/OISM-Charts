@@ -2,15 +2,15 @@
 <Report xmlns="http://soap.sforce.com/2006/04/metadata">
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountHealth__c</field>
+        <field>Account.Account_Plans__r$AccountHealth__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__APType__c</field>
+        <field>Account.Account_Plans__r$APType__c</field>
     </columns>
     <description>accounts at risk are those with low account health</description>
     <filter>
         <criteriaItems>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
+            <column>Account.Account_Plans__r$Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -27,9 +27,11 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
+    <reportType>Accounts_and_AccountPlan__c</reportType>
     <scope>organization</scope>
     <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

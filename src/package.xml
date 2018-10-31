@@ -8,6 +8,7 @@
         <members>AccountPlan_Lightning_Dashboards/Managers_Account_Dashboard21</members>
         <members>AccountPlan_Lightning_Dashboards/Managers_Account_Dashboard211</members>
         <members>AccountPlan_Lightning_Dashboards/Managers_Account_Dashboard22</members>
+        <members>AccountPlan_Lightning_Dashboards/ykXnanNNglTSTAaZYseyjAtcZbXAKI</members>
         <members>AccountPlan_classic_Dashboards</members>
         <members>AccountPlan_classic_Dashboards/Account_momentum_dashboard_classic</members>
         <members>AccountPlan_classic_Dashboards/Growth_potential_dashboard_Classic</members>
@@ -18,7 +19,14 @@
         <name>Dashboard</name>
     </types>
     <types>
+        <members>AccountPlanReports</members>
+        <members>AccountPlanReports/Account_Win_Loss</members>
+        <members>AccountPlanReports/ActivitiesByGoal</members>
+        <members>AccountPlanReports/Spend_and_Share</members>
         <members>AccountPlan_example_reports</members>
+        <members>AccountPlan_example_reports/AccountPlan_open_activities_next_60_days_KYD1</members>
+        <members>AccountPlan_example_reports/AccountPlan_open_activities_next_60_days_KYD11</members>
+        <members>AccountPlan_example_reports/AccountPlan_open_activities_next_60_days_KYD12</members>
         <members>AccountPlan_example_reports/Account_High_potential</members>
         <members>AccountPlan_example_reports/Account_KPI_summary</members>
         <members>AccountPlan_example_reports/Account_KPI_summary_rep</members>
@@ -43,11 +51,21 @@
         <members>AccountPlan_example_reports/open_activities_this_fy</members>
         <members>AccountPlan_example_reports/revenue_by_account_multi_year</members>
         <members>AccountPlan_example_reports/spend_by_account1</members>
+        <members>unfiled$public</members>
+        <members>unfiled$public/AccountPlanReport</members>
+        <members>unfiled$public/Activities_By_AP_and_Goal</members>
         <name>Report</name>
     </types>
     <types>
         <members>account_plan_and_landscape_and_propositions</members>
+        <members>account_with_plans</members>
+        <members>AccountPlan</members>
+        <members>Accounts_and_AccountPlan</members>
+        <members>Activities_with_AP</members>
+        <members>APSpendAndShare</members>
+        <members>Goals_with_Activities</members>
+        <members>Landscapes</members>
         <name>ReportType</name>
     </types>
-    <version>41.0</version>
+    <version>43.0</version>
 </Package>

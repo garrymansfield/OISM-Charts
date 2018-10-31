@@ -11,7 +11,7 @@
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountDevelopmentCategory__c</groupingColumn>
+        <groupingColumn>Account.Account_Plans__r$AccountDevelopmentCategory__c</groupingColumn>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -28,48 +28,48 @@
         <field>Account$Name</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__APType__c</field>
+        <field>Account.Account_Plans__r$APType__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountIndex__c</field>
+        <field>Account.Account_Plans__r$AccountIndex__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</field>
+        <field>Account.Account_Plans__r$WalletShare__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</field>
+        <field>Account.Account_Plans__r$GrowthPotential__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Target_Landscape__c</field>
+        <field>Account.Account_Plans__r$Target_Landscape__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Spend__c</field>
+        <field>Account.Account_Plans__r$Spend__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__No_Landscape__c</field>
+        <field>Account.Account_Plans__r$No_Landscape__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Keep__c</field>
+        <field>Account.Account_Plans__r$Keep__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Grow__c</field>
+        <field>Account.Account_Plans__r$Grow__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__ContactHealth__c</field>
+        <field>Account.Account_Plans__r$ContactHealth__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</field>
+        <field>Account.Account_Plans__r$GoalProgress__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Value_proposition__c</field>
+        <field>Account.Account_Plans__r$Value_proposition__c</field>
     </columns>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__CompetitorOverview__c</field>
+        <field>Account.Account_Plans__r$CompetitorOverview__c</field>
     </columns>
     <description>key performance indicators by account</description>
     <filter>
         <criteriaItems>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
+            <column>Account.Account_Plans__r$Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -78,7 +78,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountDevelopmentCategory__c</field>
+        <field>Account.Account_Plans__r$AccountDevelopmentCategory__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Manager Account KPI report</name>
@@ -86,9 +86,11 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
+    <reportType>Accounts_and_AccountPlan__c</reportType>
     <scope>team</scope>
     <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

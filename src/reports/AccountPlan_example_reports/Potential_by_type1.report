@@ -7,12 +7,12 @@
         <chartSummaries>
             <aggregate>Average</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
+            <column>Account.Account_Plans__r$GrowthPotential__c</column>
         </chartSummaries>
         <chartType>VerticalColumn</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Impact__c</groupingColumn>
+        <groupingColumn>Account.Account_Plans__r$Impact__c</groupingColumn>
         <location>CHART_BOTTOM</location>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
@@ -26,19 +26,19 @@
         <titleSize>18</titleSize>
     </chart>
     <columns>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</field>
+        <field>Account.Account_Plans__r$Year__c</field>
     </columns>
     <columns>
         <field>Account$Name</field>
     </columns>
     <columns>
         <aggregateTypes>Average</aggregateTypes>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</field>
+        <field>Account.Account_Plans__r$GrowthPotential__c</field>
     </columns>
     <description>Growth potential by account type</description>
     <filter>
         <criteriaItems>
-            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
+            <column>Account.Account_Plans__r$Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -47,7 +47,7 @@
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Impact__c</field>
+        <field>Account.Account_Plans__r$Impact__c</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <name>Potential by Impact</name>
@@ -55,10 +55,12 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
+    <reportType>Accounts_and_AccountPlan__c</reportType>
     <scope>organization</scope>
     <showDetails>true</showDetails>
-    <sortColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</sortColumn>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Account_Plans__r$GrowthPotential__c</sortColumn>
     <sortOrder>Desc</sortOrder>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>

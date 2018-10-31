@@ -50,10 +50,10 @@
         <chartType>HorizontalBarStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
-        <groupingColumn>AccountPlan__c$Account__c</groupingColumn>
-        <legendPosition>Bottom</legendPosition>
+        <groupingColumn>AccountPlan__c.Goals_custom__r$Name</groupingColumn>
+        <legendPosition>Right</legendPosition>
         <location>CHART_TOP</location>
-        <secondaryGroupingColumn>AccountPlan__c.Goals_custom__r.Activities__r$IsClosed</secondaryGroupingColumn>
+        <secondaryGroupingColumn>BucketField_29066686</secondaryGroupingColumn>
         <showAxisLabels>true</showAxisLabels>
         <showPercentage>false</showPercentage>
         <showTotal>false</showTotal>
@@ -62,26 +62,29 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title># activities per account</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
     <columns>
         <field>AccountPlan__c.Goals_custom__r.Activities__r$Subject</field>
     </columns>
-    <description>open and closed activities by account</description>
     <format>Summary</format>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>AccountPlan__c$Account__c</field>
+        <field>AccountPlan__c$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
     <groupingsDown>
         <dateGranularity>Day</dateGranularity>
-        <field>AccountPlan__c.Goals_custom__r.Activities__r$IsClosed</field>
+        <field>AccountPlan__c.Goals_custom__r$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>Open and closed activity per account</name>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_29066686</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Activities By AP and Goal</name>
     <params>
         <name>co</name>
         <value>1</value>
