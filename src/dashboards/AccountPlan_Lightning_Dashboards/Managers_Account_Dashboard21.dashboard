@@ -13,14 +13,14 @@
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <drillEnabled>false</drillEnabled>
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Account.Account_Plans__r$Impact__c</groupingColumn>
+                <groupingColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Impact__c</groupingColumn>
                 <header>Potential by Impact</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>AccountPlan_example_reports/Potential_by_type1</report>
@@ -41,7 +41,7 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
                 </chartSummary>
                 <componentType>Bar</componentType>
                 <displayUnits>Auto</displayUnits>
@@ -70,12 +70,12 @@
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>x</axisBinding>
-                    <column>Account.Account_Plans__r$WalletShare__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__WalletShare__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
                 </chartSummary>
                 <componentType>Scatter</componentType>
                 <displayUnits>Auto</displayUnits>
@@ -104,7 +104,7 @@
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <displayUnits>Auto</displayUnits>
@@ -112,7 +112,7 @@
                 <drillToDetailEnabled>false</drillToDetailEnabled>
                 <enableHover>false</enableHover>
                 <expandOthers>false</expandOthers>
-                <groupingColumn>Account.Account_Plans__r$APType__c</groupingColumn>
+                <groupingColumn>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__APType__c</groupingColumn>
                 <header>Growth potential - by Account type</header>
                 <legendPosition>Bottom</legendPosition>
                 <report>AccountPlan_example_reports/Potential_by_type</report>
@@ -133,7 +133,7 @@
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GrowthPotential__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <displayUnits>Auto</displayUnits>

@@ -7,7 +7,7 @@
         <chartSummaries>
             <aggregate>Sum</aggregate>
             <axisBinding>y</axisBinding>
-            <column>Account.Account_Plans__r$GoalProgress__c</column>
+            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</column>
         </chartSummaries>
         <chartType>HorizontalBarGrouped</chartType>
         <enableHoverLabels>false</enableHoverLabels>
@@ -29,12 +29,12 @@
     </chart>
     <columns>
         <aggregateTypes>Sum</aggregateTypes>
-        <field>Account.Account_Plans__r$GoalProgress__c</field>
+        <field>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</field>
     </columns>
     <description>Goal progress by account per rep</description>
     <filter>
         <criteriaItems>
-            <column>Account.Account_Plans__r$Year__c</column>
+            <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__Year__c</column>
             <isUnlocked>true</isUnlocked>
             <operator>equals</operator>
             <value>2017</value>
@@ -56,11 +56,9 @@
         <name>co</name>
         <value>1</value>
     </params>
-    <reportType>Accounts_and_AccountPlan__c</reportType>
+    <reportType>OISMAccountPlan__Accounts_and_AccountPlan__c</reportType>
     <scope>team</scope>
     <showDetails>true</showDetails>
-    <showGrandTotal>true</showGrandTotal>
-    <showSubTotals>true</showSubTotals>
     <timeFrameFilter>
         <dateColumn>Account$CreatedDate</dateColumn>
         <interval>INTERVAL_CUSTOM</interval>

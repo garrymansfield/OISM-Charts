@@ -5,136 +5,7 @@
     <backgroundStartColor>#FFFFFF</backgroundStartColor>
     <dashboardGridLayout>
         <dashboardGridComponents>
-            <colSpan>1</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Average</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountIndex__c</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <header>Overall Account Index</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>AccountPlan_example_reports/Account_KPI_summary_rep</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>3</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>1</colSpan>
-            <columnIndex>1</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Average</aggregate>
-                    <column>Account.Account_Plans__r$ContactHealth__c</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <header>Contact Health Portfolio</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>AccountPlan_example_reports/Account_KPI_summary_rep</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>3</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>1</colSpan>
-            <columnIndex>2</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Average</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GoalProgress__c</column>
-                </chartSummary>
-                <componentType>Metric</componentType>
-                <displayUnits>Auto</displayUnits>
-                <header>Goal Progress</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>AccountPlan_example_reports/Account_KPI_summary_rep</report>
-                <showRange>false</showRange>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>3</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Average</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$WalletShare__c</column>
-                </chartSummary>
-                <componentType>Gauge</componentType>
-                <displayUnits>Auto</displayUnits>
-                <gaugeMax>100.0</gaugeMax>
-                <gaugeMin>0.0</gaugeMin>
-                <header>Wallet Share</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>AccountPlan_example_reports/growth_share</report>
-                <showPercentage>false</showPercentage>
-                <showRange>false</showRange>
-                <showTotal>true</showTotal>
-                <showValues>false</showValues>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>3</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>2</colSpan>
-            <columnIndex>5</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartSummary>
-                    <aggregate>Average</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
-                </chartSummary>
-                <componentType>Gauge</componentType>
-                <displayUnits>Auto</displayUnits>
-                <gaugeMax>100.0</gaugeMax>
-                <gaugeMin>0.0</gaugeMin>
-                <header>Growth Potential</header>
-                <indicatorBreakpoint1>33.0</indicatorBreakpoint1>
-                <indicatorBreakpoint2>67.0</indicatorBreakpoint2>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <report>AccountPlan_example_reports/growth_share</report>
-                <showPercentage>false</showPercentage>
-                <showRange>false</showRange>
-                <showTotal>true</showTotal>
-                <showValues>false</showValues>
-            </dashboardComponent>
-            <rowIndex>0</rowIndex>
-            <rowSpan>3</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>5</colSpan>
+            <colSpan>9</colSpan>
             <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
@@ -142,22 +13,22 @@
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountIndex__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountIndex__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$ContactHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__ContactHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Sum</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GoalProgress__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <drillEnabled>false</drillEnabled>
@@ -173,34 +44,34 @@
                 <sortBy>RowValueDescending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>3</rowIndex>
+            <rowIndex>0</rowIndex>
             <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
-            <colSpan>4</colSpan>
-            <columnIndex>5</columnIndex>
+            <colSpan>9</colSpan>
+            <columnIndex>0</columnIndex>
             <dashboardComponent>
                 <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
                 <chartAxisRange>Auto</chartAxisRange>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountIndex__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountIndex__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$AccountHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__AccountHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$ContactHealth__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__ContactHealth__c</column>
                 </chartSummary>
                 <chartSummary>
                     <aggregate>Average</aggregate>
                     <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GoalProgress__c</column>
+                    <column>Account.OISMAccountPlan__Account_Plans__r$OISMAccountPlan__GoalProgress__c</column>
                 </chartSummary>
                 <componentType>Column</componentType>
                 <drillEnabled>false</drillEnabled>
@@ -216,76 +87,7 @@
                 <sortBy>RowValueDescending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>3</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>0</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>false</autoselectColumnsFromReport>
-                <chartAxisRange>Auto</chartAxisRange>
-                <chartSummary>
-                    <aggregate>Average</aggregate>
-                    <axisBinding>y</axisBinding>
-                    <column>Account.Account_Plans__r$GrowthPotential__c</column>
-                </chartSummary>
-                <componentType>Column</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <enableHover>false</enableHover>
-                <expandOthers>false</expandOthers>
-                <groupingColumn>Account$Owner</groupingColumn>
-                <header>Growth Potential by Sales Manager</header>
-                <legendPosition>Bottom</legendPosition>
-                <report>AccountPlan_example_reports/Account_KPI_summary_rep</report>
-                <showPercentage>false</showPercentage>
-                <showValues>true</showValues>
-                <sortBy>RowValueDescending</sortBy>
-                <useReportChart>false</useReportChart>
-            </dashboardComponent>
-            <rowIndex>8</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>3</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>10 accounts at risk</header>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <maxValuesDisplayed>10</maxValuesDisplayed>
-                <report>AccountPlan_example_reports/Account_at_risk</report>
-                <sortBy>RowValueAscending</sortBy>
-            </dashboardComponent>
-            <rowIndex>8</rowIndex>
-            <rowSpan>5</rowSpan>
-        </dashboardGridComponents>
-        <dashboardGridComponents>
-            <colSpan>3</colSpan>
-            <columnIndex>6</columnIndex>
-            <dashboardComponent>
-                <autoselectColumnsFromReport>true</autoselectColumnsFromReport>
-                <componentType>Table</componentType>
-                <displayUnits>Auto</displayUnits>
-                <drillEnabled>false</drillEnabled>
-                <drillToDetailEnabled>false</drillToDetailEnabled>
-                <header>10 High potential accounts</header>
-                <indicatorHighColor>#00716B</indicatorHighColor>
-                <indicatorLowColor>#C23934</indicatorLowColor>
-                <indicatorMiddleColor>#FFB75D</indicatorMiddleColor>
-                <maxValuesDisplayed>10</maxValuesDisplayed>
-                <report>AccountPlan_example_reports/Account_High_potential</report>
-                <sortBy>RowValueDescending</sortBy>
-            </dashboardComponent>
-            <rowIndex>8</rowIndex>
+            <rowIndex>5</rowIndex>
             <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <numberOfColumns>9</numberOfColumns>
