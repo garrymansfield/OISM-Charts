@@ -40,10 +40,10 @@
         <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$EventSubtype</field>
     </columns>
     <columns>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.Activities__r$CreatedDate</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$CreatedDate</field>
     </columns>
     <columns>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.Activities__r$ActivityDate</field>
+        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$ActivityDate</field>
     </columns>
     <filter>
         <criteriaItems>

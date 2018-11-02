@@ -173,7 +173,7 @@
                 <sortBy>RowValueDescending</sortBy>
                 <useReportChart>false</useReportChart>
             </dashboardComponent>
-            <rowIndex>0</rowIndex>
+            <rowIndex>3</rowIndex>
             <rowSpan>5</rowSpan>
         </dashboardGridComponents>
         <dashboardGridComponents>
