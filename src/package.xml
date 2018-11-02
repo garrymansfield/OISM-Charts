@@ -52,5 +52,5 @@
         <members>account_plan_and_landscape_and_propositions</members>
         <name>ReportType</name>
     </types>
-    <version>41.0</version>
+    <version>43.0</version>
 </Package>
