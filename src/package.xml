@@ -28,6 +28,9 @@
         <members>AccountPlan_example_reports/Account_keepers</members>
         <members>AccountPlan_example_reports/Account_spend_by_proposition</members>
         <members>AccountPlan_example_reports/Activities_By_AP_and_Goal1</members>
+        <members>AccountPlan_example_reports/AccountPlan_open_activities_next_60_days_KYD1</members>
+        <members>AccountPlan_example_reports/AccountPlan_open_activities_next_60_days_KYD11</members>
+        <members>AccountPlan_example_reports/AccountPlan_open_activities_next_60_days_KYD12</members>
         <members>AccountPlan_example_reports/Activities_By_Account</members>
         <members>AccountPlan_example_reports/Landscape_Renewal_dates_by_month</members>
         <members>AccountPlan_example_reports/Per_account_landscape_KPI</members>
