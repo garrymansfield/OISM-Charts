@@ -69,7 +69,6 @@
     </dashboardGridLayout>
     <dashboardType>SpecifiedUser</dashboardType>
     <isGridLayout>true</isGridLayout>
-    <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Account momentum Dashboard (Lightning)</title>
     <titleColor>#000000</titleColor>

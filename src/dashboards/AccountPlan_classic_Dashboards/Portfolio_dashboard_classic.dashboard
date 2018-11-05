@@ -207,7 +207,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Portfolio Dashboard (Classic)</title>
     <titleColor>#000000</titleColor>

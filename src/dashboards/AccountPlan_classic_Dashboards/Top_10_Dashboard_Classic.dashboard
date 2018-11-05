@@ -56,7 +56,6 @@
             <sortBy>RowValueAscending</sortBy>
         </components>
     </rightSection>
-    <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Top 10 Dashboard (Classic)</title>
     <titleColor>#000000</titleColor>

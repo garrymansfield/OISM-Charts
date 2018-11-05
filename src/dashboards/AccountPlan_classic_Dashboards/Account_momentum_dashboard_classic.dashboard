@@ -52,7 +52,6 @@
             <useReportChart>true</useReportChart>
         </components>
     </rightSection>
-    <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Account momentum dashboard (classic)</title>
     <titleColor>#000000</titleColor>

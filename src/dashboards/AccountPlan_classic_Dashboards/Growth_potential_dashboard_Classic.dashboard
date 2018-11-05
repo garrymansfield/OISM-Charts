@@ -112,7 +112,6 @@
             <useReportChart>false</useReportChart>
         </components>
     </rightSection>
-    <runningUser>admin@oismap.com</runningUser>
     <textColor>#000000</textColor>
     <title>Growth potential dashboard (Classic)</title>
     <titleColor>#000000</titleColor>
