@@ -8,7 +8,7 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r$OISMAccountPlan__TeamMember__c</groupingColumn>
@@ -23,7 +23,7 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title># AccountPlan open activities</title>
+        <title># activities per account this FY</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
@@ -32,10 +32,6 @@
     </columns>
     <columns>
         <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$Subject</field>
-    </columns>
-    <columns>
-        <aggregateTypes>Sum</aggregateTypes>
-        <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$IsClosed</field>
     </columns>
     <columns>
         <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$TaskSubtype</field>
@@ -49,6 +45,7 @@
     <columns>
         <field>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$ActivityDate</field>
     </columns>
+    <description>A list of overdue account plan activity</description>
     <filter>
         <criteriaItems>
             <column>OISMAccountPlan__AccountPlan__c$OISMAccountPlan__Year__c</column>
@@ -73,7 +70,7 @@
         <field>OISMAccountPlan__AccountPlan__c$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>AccountPlan activity summary</name>
+    <name>AccountPlan overdue activities</name>
     <params>
         <name>co</name>
         <value>1</value>
@@ -85,6 +82,6 @@
     <showSubTotals>false</showSubTotals>
     <timeFrameFilter>
         <dateColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$ActivityDate</dateColumn>
-        <interval>INTERVAL_CUSTOM</interval>
+        <interval>INTERVAL_LAST120</interval>
     </timeFrameFilter>
 </Report>

@@ -8,7 +8,7 @@
             <axisBinding>y</axisBinding>
             <column>RowCount</column>
         </chartSummaries>
-        <chartType>HorizontalBarStacked</chartType>
+        <chartType>VerticalColumnStacked</chartType>
         <enableHoverLabels>false</enableHoverLabels>
         <expandOthers>true</expandOthers>
         <groupingColumn>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r$OISMAccountPlan__TeamMember__c</groupingColumn>
@@ -23,7 +23,7 @@
         <summaryAxisRange>Auto</summaryAxisRange>
         <textColor>#000000</textColor>
         <textSize>12</textSize>
-        <title># AccountPlan open activities</title>
+        <title># activities per account this FY</title>
         <titleColor>#000000</titleColor>
         <titleSize>18</titleSize>
     </chart>
@@ -56,6 +56,12 @@
             <operator>equals</operator>
             <value>2018</value>
         </criteriaItems>
+        <criteriaItems>
+            <column>OISMAccountPlan__AccountPlan__c.OISMAccountPlan__Goals_custom__r.OISMAccountPlan__Activities__r$IsClosed</column>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
     </filter>
     <format>Summary</format>
     <groupingsDown>
@@ -73,7 +79,7 @@
         <field>OISMAccountPlan__AccountPlan__c$Name</field>
         <sortOrder>Asc</sortOrder>
     </groupingsDown>
-    <name>AccountPlan activity summary</name>
+    <name>AccountPlan open activities</name>
     <params>
         <name>co</name>
         <value>1</value>
